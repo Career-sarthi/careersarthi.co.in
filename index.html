@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Sarthi - Your Career, Your Compass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <h1 class="brand-title">Career Sarthi</h1>
+                    <p class="brand-subtitle">Your Career, Your Compass</p>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu" id="navbarMenu">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#psychometric" class="nav-link" data-section="psychometric">Psychometric Test</a>
+                    <a href="#results" class="nav-link" data-section="results">Results</a>
+                    <a href="#counseling" class="nav-link" data-section="counseling">Counseling Services</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Your Career, Your Compass</h1>
+                    <p class="hero-subtitle">Discover your perfect career path with AI-powered psychometric assessments and expert counseling</p>
+                    <p class="hero-description">Career Sarthi helps school and college students across India make informed career decisions through scientific assessments, personalized counseling, and comprehensive career guidance.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn--primary btn--lg" onclick="navigateToSection('psychometric')">Take Free Assessment</button>
+                        <button class="btn btn--outline btn--lg" onclick="navigateToSection('counseling')">Book Counseling</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🧠</div>
+                        <h3 class="service-title">Psychometric Assessment</h3>
+                        <p class="service-description">Scientific personality and aptitude evaluation to discover your strengths and interests</p>
+                        <button class="btn btn--outline btn--sm" onclick="navigateToSection('psychometric')">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💼</div>
+                        <h3 class="service-title">Career Counseling</h3>
+                        <p class="service-description">One-on-one guidance from qualified counselors to help you make informed career decisions</p>
+                        <button class="btn btn--outline btn--sm" onclick="navigateToSection('counseling')">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎓</div>
+                        <h3 class="service-title">College Guidance</h3>
+                        <p class="service-description">Admission support and course selection guidance for your academic journey</p>
+                        <button class="btn btn--outline btn--sm" onclick="navigateToSection('counseling')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Student Stories</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Career Sarthi helped me discover my passion for data science. Now I'm working at a top tech company!"</p>
+                        <div class="testimonial-author">
+                            <strong>Ankit Sharma</strong> - Delhi
+                            <span class="author-course">Data Scientist</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The psychometric test was incredibly accurate. I'm now pursuing engineering with confidence."</p>
+                        <div class="testimonial-author">
+                            <strong>Priya Gupta</strong> - Mumbai
+                            <span class="author-course">Engineering Student</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Excellent guidance for government job preparation. Highly recommended for Bihar students."</p>
+                        <div class="testimonial-author">
+                            <strong>Rohit Kumar</strong> - Patna
+                            <span class="author-course">Civil Services Aspirant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Psychometric Test Section -->
+    <section id="psychometric" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Discover Your Career Personality</h1>
+                <p class="section-description">Our comprehensive psychometric assessment evaluates your interests, personality traits, and aptitudes to suggest the most suitable career paths for you.</p>
+            </div>
+
+            <div class="test-content">
+                <div class="test-info">
+                    <h3>What You'll Discover:</h3>
+                    <ul class="benefits-list">
+                        <li>Your personality type and work preferences</li>
+                        <li>Career paths that match your interests</li>
+                        <li>Strengths and areas for development</li>
+                        <li>Recommended courses and colleges</li>
+                        <li>Salary expectations and growth prospects</li>
+                    </ul>
+                </div>
+
+                <div class="sample-questions">
+                    <h3>Sample Questions:</h3>
+                    <div class="question-card">
+                        <h4>Question 1:</h4>
+                        <p>Which activity interests you most?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="q1" value="analytical">
+                                <span>Analyzing data and solving problems</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q1" value="helper">
+                                <span>Helping others with their challenges</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q1" value="creative">
+                                <span>Creating art or writing</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q1" value="leader">
+                                <span>Leading team projects</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <h4>Question 2:</h4>
+                        <p>In group projects, you usually:</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="q2" value="analytical">
+                                <span>Focus on research and analysis</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q2" value="helper">
+                                <span>Help coordinate team members</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q2" value="creative">
+                                <span>Come up with creative ideas</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q2" value="leader">
+                                <span>Take charge and organize tasks</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <h4>Question 3:</h4>
+                        <p>Your ideal work environment is:</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="q3" value="analytical">
+                                <span>Quiet office with technical tools</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q3" value="helper">
+                                <span>Interactive space with people</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q3" value="creative">
+                                <span>Creative studio or flexible space</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q3" value="leader">
+                                <span>Meeting rooms and leadership settings</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-actions">
+                    <button class="btn btn--primary btn--lg" onclick="startAssessment()">Take Complete Assessment</button>
+                    <p class="test-duration">⏱️ Takes 15-20 minutes | 🆓 Completely Free</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Your Career Assessment Results</h1>
+                <p class="section-description">Based on your responses, here are your personality types and recommended career paths</p>
+            </div>
+
+            <div class="results-content">
+                <div class="personality-types">
+                    <div class="personality-type" data-type="analytical">
+                        <div class="type-icon">🔬</div>
+                        <h3 class="type-title">Analytical Thinker</h3>
+                        <p class="type-description">Logical, detail-oriented, problem-solver who excels at systematic analysis</p>
+                        <div class="career-suggestions">
+                            <h4>Recommended Careers:</h4>
+                            <div class="career-tags">
+                                <span class="career-tag">Data Scientist</span>
+                                <span class="career-tag">Software Engineer</span>
+                                <span class="career-tag">Research Analyst</span>
+                                <span class="career-tag">Financial Analyst</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--outline btn--sm" onclick="showPersonalityDetails('analytical')">View Details</button>
+                    </div>
+
+                    <div class="personality-type" data-type="helper">
+                        <div class="type-icon">❤️</div>
+                        <h3 class="type-title">Helper & Caregiver</h3>
+                        <p class="type-description">Empathetic, supportive, people-focused individual who thrives helping others</p>
+                        <div class="career-suggestions">
+                            <h4>Recommended Careers:</h4>
+                            <div class="career-tags">
+                                <span class="career-tag">Teacher</span>
+                                <span class="career-tag">Counselor</span>
+                                <span class="career-tag">Healthcare Worker</span>
+                                <span class="career-tag">Social Worker</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--outline btn--sm" onclick="showPersonalityDetails('helper')">View Details</button>
+                    </div>
+
+                    <div class="personality-type" data-type="creative">
+                        <div class="type-icon">🎨</div>
+                        <h3 class="type-title">Creative Innovator</h3>
+                        <p class="type-description">Artistic, imaginative, original thinker who brings fresh perspectives</p>
+                        <div class="career-suggestions">
+                            <h4>Recommended Careers:</h4>
+                            <div class="career-tags">
+                                <span class="career-tag">Graphic Designer</span>
+                                <span class="career-tag">Content Creator</span>
+                                <span class="career-tag">Marketing Specialist</span>
+                                <span class="career-tag">Architect</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--outline btn--sm" onclick="showPersonalityDetails('creative')">View Details</button>
+                    </div>
+
+                    <div class="personality-type" data-type="leader">
+                        <div class="type-icon">👑</div>
+                        <h3 class="type-title">Leader & Organizer</h3>
+                        <p class="type-description">Confident, decisive, goal-oriented individual who excels at leadership</p>
+                        <div class="career-suggestions">
+                            <h4>Recommended Careers:</h4>
+                            <div class="career-tags">
+                                <span class="career-tag">Project Manager</span>
+                                <span class="career-tag">Business Analyst</span>
+                                <span class="career-tag">Entrepreneur</span>
+                                <span class="career-tag">Sales Manager</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--outline btn--sm" onclick="showPersonalityDetails('leader')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn--primary btn--lg" onclick="navigateToSection('counseling')">Book Personal Counseling</button>
+                    <button class="btn btn--outline btn--lg" onclick="downloadResults()">Download Results</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counseling Services Section -->
+    <section id="counseling" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Professional Career Counseling Services</h1>
+                <p class="section-description">Get personalized guidance from certified career counselors to make informed decisions about your future</p>
+            </div>
+
+            <div class="counseling-content">
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Basic Assessment</h3>
+                            <div class="package-price">₹999</div>
+                        </div>
+                        <div class="package-duration">1 session (60 minutes)</div>
+                        <ul class="package-features">
+                            <li>Psychometric Test</li>
+                            <li>Basic Report</li>
+                            <li>Career Recommendations</li>
+                        </ul>
+                        <button class="btn btn--outline btn--full-width" onclick="selectPackage('basic')">Choose Plan</button>
+                    </div>
+
+                    <div class="package-card popular">
+                        <div class="package-badge">Most Popular</div>
+                        <div class="package-header">
+                            <h3 class="package-name">Premium Guidance</h3>
+                            <div class="package-price">₹2999</div>
+                        </div>
+                        <div class="package-duration">3 sessions (180 minutes)</div>
+                        <ul class="package-features">
+                            <li>Complete Assessment</li>
+                            <li>One-on-One Session</li>
+                            <li>Detailed Career Roadmap</li>
+                            <li>College Guidance</li>
+                        </ul>
+                        <button class="btn btn--primary btn--full-width" onclick="selectPackage('premium')">Choose Plan</button>
+                    </div>
+
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Complete Career Solution</h3>
+                            <div class="package-price">₹4999</div>
+                        </div>
+                        <div class="package-duration">5 sessions + ongoing support</div>
+                        <ul class="package-features">
+                            <li>Full Assessment Suite</li>
+                            <li>Multiple Counseling Sessions</li>
+                            <li>Resume Guidance</li>
+                            <li>Interview Preparation</li>
+                            <li>3-Month Support</li>
+                        </ul>
+                        <button class="btn btn--outline btn--full-width" onclick="selectPackage('complete')">Choose Plan</button>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form" id="bookingForm" style="display: none;">
+                    <div class="form-container">
+                        <h3>Book Your Counseling Session</h3>
+                        <form id="counselingBookingForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" name="fullName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Preferred Service *</label>
+                                <select class="form-control" name="service" required>
+                                    <option value="">Select preferred service</option>
+                                    <option value="basic">Basic Assessment - ₹999</option>
+                                    <option value="premium">Premium Guidance - ₹2999</option>
+                                    <option value="complete">Complete Career Solution - ₹4999</option>
+                                </select>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn--outline" onclick="hideBookingForm()">Cancel</button>
+                                <button type="submit" class="btn btn--primary">Book Session</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Get in Touch</h1>
+                <p class="section-description">Have questions? We're here to help you navigate your career journey</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h3>Send us a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label class="form-label">Name *</label>
+                                <input type="text" class="form-control" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message *</label>
+                                <textarea class="form-control" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <h3>Contact Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-text">
+                                    <strong>Address:</strong><br>
+                                    Career Sarthi Consultant<br>
+                                    Bhootnath Road, Patna
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-text">
+                                    <strong>Phone:</strong><br>
+                                    6200989340
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">🕒</div>
+                                <div class="contact-text">
+                                    <strong>Hours:</strong><br>
+                                    Mon-Sat: 9:00 AM - 6:00 PM
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Placeholder -->
+                        <div class="map-section">
+                            <h4>Find Us</h4>
+                            <div class="map-placeholder">
+                                <div class="map-content">
+                                    <p>📍 Career Sarthi Location</p>
+                                    <p>Bhootnath Road, Patna</p>
+                                    <button class="btn btn--outline btn--sm" onclick="openMaps()">Open in Google Maps</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Career Sarthi</h3>
+                    <p>Your trusted partner in career guidance and professional development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" onclick="navigateToSection('home')">Home</a></li>
+                        <li><a href="#psychometric" onclick="navigateToSection('psychometric')">Take Test</a></li>
+                        <li><a href="#counseling" onclick="navigateToSection('counseling')">Book Counseling</a></li>
+                        <li><a href="#contact" onclick="navigateToSection('contact')">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#psychometric" onclick="navigateToSection('psychometric')">Psychometric Tests</a></li>
+                        <li><a href="#counseling" onclick="navigateToSection('counseling')">Career Counseling</a></li>
+                        <li><a href="#counseling" onclick="navigateToSection('counseling')">College Guidance</a></li>
+                        <li><a href="#results" onclick="navigateToSection('results')">Career Assessment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>📞 6200989340</li>
+                        <li>📍 Bhootnath Road, Patna</li>
+                        <li>🕒 Mon-Sat: 9AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Career Sarthi. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal hidden" id="assessmentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Start Your Career Assessment</h3>
+                <button class="modal-close" onclick="closeModal('assessmentModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>This comprehensive assessment will take approximately 15-20 minutes and will help us understand your personality, interests, and career preferences.</p>
+                <p><strong>What you'll get:</strong></p>
+                <ul>
+                    <li>Detailed personality analysis</li>
+                    <li>Career recommendations tailored to you</li>
+                    <li>Educational pathway suggestions</li>
+                    <li>Skills development roadmap</li>
+                </ul>
+                <div class="modal-actions">
+                    <button class="btn btn--outline" onclick="closeModal('assessmentModal')">Maybe Later</button>
+                    <button class="btn btn--primary" onclick="startFullAssessment()">Start Assessment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
